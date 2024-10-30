@@ -14,7 +14,7 @@ public class Databaseproject {
                 java.awt.EventQueue.invokeLater(new Runnable() {
              @Override
              public void run() {
-                 new loginpage().setVisible(true);
+                 new firstpage().setVisible(true);
              }
          });
     }

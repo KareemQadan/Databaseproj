@@ -44,7 +44,6 @@ public class signuppage extends javax.swing.JFrame {
         jTextField8 = new javax.swing.JTextField();
         backbutton = new javax.swing.JButton();
         signupbutton = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -67,20 +66,20 @@ public class signuppage extends javax.swing.JFrame {
 
         jLabel6.setText("Phone number");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 160, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, 160, -1));
 
         jLabel7.setText("Password");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 77, -1));
 
         jLabel8.setText("Last name");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 77, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, 160, -1));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 160, -1));
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, 160, -1));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 160, -1));
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, 160, -1));
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 160, -1));
-        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 160, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, 160, -1));
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, 160, -1));
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 160, -1));
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 160, -1));
+        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, 160, -1));
+        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 160, -1));
+        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 250, 160, -1));
 
         backbutton.setText("Back");
         backbutton.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +87,7 @@ public class signuppage extends javax.swing.JFrame {
                 backbuttonActionPerformed(evt);
             }
         });
-        getContentPane().add(backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 610, 130, -1));
+        getContentPane().add(backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 520, 130, -1));
 
         signupbutton.setText("Sign up");
         signupbutton.addActionListener(new java.awt.event.ActionListener() {
@@ -97,9 +96,6 @@ public class signuppage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(signupbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, 180, -1));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/databaseproject/welcometohodhod1.jpeg"))); // NOI18N
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -40, 910, 860));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -158,7 +154,6 @@ public class signuppage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;

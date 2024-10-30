@@ -8,12 +8,12 @@ package com.mycompany.databaseproject;
  *
  * @author X1
  */
-public class loginpage extends javax.swing.JFrame {
+public class adminlogin extends javax.swing.JFrame {
 
     /**
-     * Creates new form loginpage
+     * Creates new form adminlogin
      */
-    public loginpage() {
+    public adminlogin() {
         initComponents();
     }
 
@@ -32,21 +32,12 @@ public class loginpage extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         loginbutton = new javax.swing.JButton();
         backbutton = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        forgetyourpasswordbutton = new javax.swing.JButton();
-        signupbutton = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("USER ID ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(264, 225, 77, -1));
+        jLabel1.setText("ADMIN ID");
 
         jLabel2.setText("PASSWORD");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(264, 274, 77, -1));
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(347, 271, 220, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(347, 222, 220, -1));
 
         loginbutton.setText("LOGIN");
         loginbutton.addActionListener(new java.awt.event.ActionListener() {
@@ -54,7 +45,6 @@ public class loginpage extends javax.swing.JFrame {
                 loginbuttonActionPerformed(evt);
             }
         });
-        getContentPane().add(loginbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, 240, -1));
 
         backbutton.setText("Back");
         backbutton.addActionListener(new java.awt.event.ActionListener() {
@@ -62,41 +52,48 @@ public class loginpage extends javax.swing.JFrame {
                 backbuttonActionPerformed(evt);
             }
         });
-        getContentPane().add(backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 129, -1));
 
-        jLabel3.setText("Forget your password?");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 460, -1, -1));
-
-        forgetyourpasswordbutton.setText("Click here");
-        forgetyourpasswordbutton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                forgetyourpasswordbuttonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(forgetyourpasswordbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 460, 137, -1));
-
-        signupbutton.setText("Sign up");
-        signupbutton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                signupbuttonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(signupbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 430, 137, -1));
-
-        jLabel4.setText("Don't have account?");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 430, 120, -1));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(508, 508, 508)
+                .addComponent(loginbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(134, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
+                    .addComponent(jTextField1))
+                .addGap(123, 123, 123))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(backbutton)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(loginbutton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 342, Short.MAX_VALUE)
+                .addComponent(backbutton))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void forgetyourpasswordbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_forgetyourpasswordbuttonActionPerformed
-        // TODO add your handling code here:
-        new forgetpasswordpage().setVisible(true);
-    }//GEN-LAST:event_forgetyourpasswordbuttonActionPerformed
-
-    private void signupbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupbuttonActionPerformed
-new signuppage().setVisible(true);        // TODO add your handling code here:
-    }//GEN-LAST:event_signupbuttonActionPerformed
 
     private void loginbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginbuttonActionPerformed
         // TODO add your handling code here:
@@ -124,34 +121,30 @@ new signuppage().setVisible(true);        // TODO add your handling code here:
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(loginpage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(adminlogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(loginpage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(adminlogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(loginpage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(adminlogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(loginpage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(adminlogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new loginpage().setVisible(true);
+                new adminlogin().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backbutton;
-    private javax.swing.JButton forgetyourpasswordbutton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton loginbutton;
-    private javax.swing.JButton signupbutton;
     // End of variables declaration//GEN-END:variables
 }
